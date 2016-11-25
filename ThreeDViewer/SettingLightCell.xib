@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingLightCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="fgQ-4P-lVx" customClass="SettingLightCell">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fgQ-4P-lVx" id="xlh-2M-gCF">
+                <frame key="frameInset" width="449" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x:-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-4x-f4v">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="y2N-DQ-uMA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stepper opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="U7y-yf-jYV">
+                        <connections>
+                            <action selector="positionChanged:" destination="fgQ-4P-lVx" eventType="valueChanged" id="zlC-lB-Kaj"/>
+                        </connections>
+                    </stepper>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y:-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBs-xy-F6w">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="WZz-eH-UMY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stepper opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EjZ-Kx-vaS">
+                        <connections>
+                            <action selector="positionChanged:" destination="fgQ-4P-lVx" eventType="valueChanged" id="fnM-gO-iwo"/>
+                        </connections>
+                    </stepper>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="z:-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLc-6c-R0G">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="zjE-Am-2oX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stepper opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8aR-mK-wvF">
+                        <connections>
+                            <action selector="positionChanged:" destination="fgQ-4P-lVx" eventType="valueChanged" id="ZQi-cj-ekv"/>
+                        </connections>
+                    </stepper>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="fBs-xy-F6w" firstAttribute="centerY" secondItem="xlh-2M-gCF" secondAttribute="centerY" id="223-kk-iE7"/>
+                    <constraint firstItem="sLc-6c-R0G" firstAttribute="centerY" secondItem="xlh-2M-gCF" secondAttribute="centerY" id="93D-pR-BVp"/>
+                    <constraint firstItem="8aR-mK-wvF" firstAttribute="centerY" secondItem="xlh-2M-gCF" secondAttribute="centerY" id="Cqv-wn-k6a"/>
+                    <constraint firstItem="EjZ-Kx-vaS" firstAttribute="leading" secondItem="fBs-xy-F6w" secondAttribute="trailing" constant="2" id="D3o-cO-Tzj"/>
+                    <constraint firstItem="8aR-mK-wvF" firstAttribute="centerY" secondItem="xlh-2M-gCF" secondAttribute="centerY" id="SZ2-OC-Z2F"/>
+                    <constraint firstItem="cGN-4x-f4v" firstAttribute="centerY" secondItem="xlh-2M-gCF" secondAttribute="centerY" id="TT4-IW-boZ"/>
+                    <constraint firstItem="U7y-yf-jYV" firstAttribute="leading" secondItem="cGN-4x-f4v" secondAttribute="trailing" constant="2" id="Xsi-jQ-RJB"/>
+                    <constraint firstItem="fBs-xy-F6w" firstAttribute="leading" secondItem="U7y-yf-jYV" secondAttribute="trailing" constant="10" id="jeI-fd-1SB"/>
+                    <constraint firstItem="8aR-mK-wvF" firstAttribute="leading" secondItem="sLc-6c-R0G" secondAttribute="trailing" constant="2" id="jxE-a1-Q32"/>
+                    <constraint firstItem="EjZ-Kx-vaS" firstAttribute="centerY" secondItem="xlh-2M-gCF" secondAttribute="centerY" id="kIn-d6-fxW"/>
+                    <constraint firstItem="cGN-4x-f4v" firstAttribute="leading" secondItem="xlh-2M-gCF" secondAttribute="leadingMargin" constant="10" id="mpT-08-GOa"/>
+                    <constraint firstItem="sLc-6c-R0G" firstAttribute="leading" secondItem="EjZ-Kx-vaS" secondAttribute="trailing" constant="10" id="rvR-gg-qgI"/>
+                    <constraint firstItem="U7y-yf-jYV" firstAttribute="centerY" secondItem="xlh-2M-gCF" secondAttribute="centerY" id="wd9-vi-L4h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="xLabel" destination="cGN-4x-f4v" id="NVp-rv-7Zj"/>
+                <outlet property="xStepper" destination="U7y-yf-jYV" id="xy8-9h-UH1"/>
+                <outlet property="yLabel" destination="fBs-xy-F6w" id="VcY-G1-OaM"/>
+                <outlet property="yStepper" destination="EjZ-Kx-vaS" id="cyg-RG-WVW"/>
+                <outlet property="zLabel" destination="sLc-6c-R0G" id="IV4-do-Uy0"/>
+                <outlet property="zStepper" destination="8aR-mK-wvF" id="yez-hi-iWF"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="-360"/>
+        </tableViewCell>
+    </objects>
+</document>

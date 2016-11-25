@@ -1,0 +1,1191 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		775637C9FF6A9DD0BE3D4989 /* libPods-ThreeDViewerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0DDEA8EC2E480DBF258548 /* libPods-ThreeDViewerUITests.a */; };
+		9D1649091DAA889A0093793D /* ModelInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1649071DAA889A0093793D /* ModelInfoViewController.m */; };
+		9D16490A1DAA889A0093793D /* ModelInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D1649081DAA889A0093793D /* ModelInfoViewController.xib */; };
+		9D16490C1DAB1F220093793D /* InMobiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D16490B1DAB1F220093793D /* InMobiSDK.framework */; };
+		9D1649261DAB20E10093793D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1649251DAB20E10093793D /* libsqlite3.tbd */; };
+		9D3873241DA89300004917B3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3873231DA89300004917B3 /* MBProgressHUD.m */; };
+		9D3873271DA8C9DC004917B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3873261DA8C9DC004917B3 /* CoreGraphics.framework */; };
+		9D38732A1DA8FF4B004917B3 /* OneDriveUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3873291DA8FF4B004917B3 /* OneDriveUtil.m */; };
+		9D38732E1DA90A2F004917B3 /* SnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D38732D1DA90A2F004917B3 /* SnapshotViewController.m */; };
+		9D3873331DA913B5004917B3 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3873321DA913B5004917B3 /* ImageUtils.m */; };
+		9D3873361DA92463004917B3 /* OneDriveCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3873351DA92463004917B3 /* OneDriveCollectionViewController.m */; };
+		9D3873391DA92EC3004917B3 /* OneDriveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3873381DA92EC3004917B3 /* OneDriveCollectionViewCell.m */; };
+		9D38733B1DAA8606004917B3 /* flashlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D38733A1DAA8606004917B3 /* flashlight.mp3 */; };
+		9D38733F1DAA8743004917B3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D38733E1DAA8743004917B3 /* AVFoundation.framework */; };
+		9D778BB91DA13F5600A21FD0 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D778BB81DA13F5600A21FD0 /* GLViewController.m */; };
+		9D778BBC1DA13F6500A21FD0 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D778BBB1DA13F6500A21FD0 /* GLView.m */; };
+		9D778BBE1DA147AB00A21FD0 /* vertex.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9D778BBD1DA147AB00A21FD0 /* vertex.sh */; };
+		9D778BC31DA14EAE00A21FD0 /* fragment.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9D778BC21DA14EAE00A21FD0 /* fragment.sh */; };
+		9DA43F2D1DAB9E300012F500 /* cow-nonormals.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9DA43F2A1DAB9E300012F500 /* cow-nonormals.obj */; };
+		9DA43F2E1DAB9E300012F500 /* pumpkin_tall_10k.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9DA43F2B1DAB9E300012F500 /* pumpkin_tall_10k.obj */; };
+		9DA43F2F1DAB9E300012F500 /* teddy.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9DA43F2C1DAB9E300012F500 /* teddy.obj */; };
+		9DBEC2401DAB210A0021FA11 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBEC23F1DAB210A0021FA11 /* libz.tbd */; };
+		9DBEC2441DAB3BDD0021FA11 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBEC2421DAB3BDD0021FA11 /* SettingViewController.m */; };
+		9DBEC2451DAB3BDD0021FA11 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC2431DAB3BDD0021FA11 /* SettingViewController.xib */; };
+		9DBEC2471DAB40380021FA11 /* SettingLightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC2461DAB40380021FA11 /* SettingLightCell.xib */; };
+		9DBEC24A1DAB419B0021FA11 /* SettingLightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBEC2491DAB419B0021FA11 /* SettingLightCell.m */; };
+		9DBEC24E1DAB441F0021FA11 /* SettingColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBEC24C1DAB441F0021FA11 /* SettingColorCell.m */; };
+		9DBEC24F1DAB441F0021FA11 /* SettingColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC24D1DAB441F0021FA11 /* SettingColorCell.xib */; };
+		9DBEC2511DAB640F0021FA11 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC2501DAB640F0021FA11 /* teapot.obj */; };
+		9DBEC2541DAB641D0021FA11 /* plane3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC2521DAB641D0021FA11 /* plane3.mtl */; };
+		9DBEC2551DAB641D0021FA11 /* plane3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC2531DAB641D0021FA11 /* plane3.obj */; };
+		9DBEC2581DAB64260021FA11 /* cylinder2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC2561DAB64260021FA11 /* cylinder2.mtl */; };
+		9DBEC2591DAB64260021FA11 /* cylinder2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC2571DAB64260021FA11 /* cylinder2.obj */; };
+		9DBEC25D1DAB64D00021FA11 /* Avent.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC25A1DAB64D00021FA11 /* Avent.mtl */; };
+		9DBEC25E1DAB64D00021FA11 /* Avent.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC25B1DAB64D00021FA11 /* Avent.obj */; };
+		9DBEC25F1DAB64D00021FA11 /* interior_lod0.tga in Resources */ = {isa = PBXBuildFile; fileRef = 9DBEC25C1DAB64D00021FA11 /* interior_lod0.tga */; };
+		B732C044A04F9DF247A6023E /* libPods-ThreeDViewerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADF6ED108B03E1A791EF032 /* libPods-ThreeDViewerTests.a */; };
+		BC13AE4E1DC187B800EECB7A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE4D1DC187B800EECB7A /* AdSupport.framework */; };
+		BC13AE501DC187BF00EECB7A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE4F1DC187BF00EECB7A /* CoreLocation.framework */; };
+		BC13AE521DC187C400EECB7A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE511DC187C400EECB7A /* SystemConfiguration.framework */; };
+		BC13AE541DC187C900EECB7A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE531DC187C900EECB7A /* CoreTelephony.framework */; };
+		BC13AE561DC187CF00EECB7A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE551DC187CF00EECB7A /* MediaPlayer.framework */; };
+		BC13AE591DC187D600EECB7A /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE571DC187D600EECB7A /* EventKit.framework */; };
+		BC13AE5A1DC187D600EECB7A /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE581DC187D600EECB7A /* EventKitUI.framework */; };
+		BC13AE5C1DC187DB00EECB7A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE5B1DC187DB00EECB7A /* StoreKit.framework */; };
+		BC13AE5E1DC187E500EECB7A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE5D1DC187E500EECB7A /* JavaScriptCore.framework */; };
+		BC13AE601DC187E900EECB7A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE5F1DC187E900EECB7A /* SafariServices.framework */; };
+		BC13AE621DC188AA00EECB7A /* AmazonAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AE611DC188AA00EECB7A /* AmazonAd.framework */; };
+		BC13AEAA1DC1BA6B00EECB7A /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC13AEA91DC1BA6B00EECB7A /* ShareViewController.m */; };
+		BC13AEAD1DC1BA6B00EECB7A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC13AEAB1DC1BA6B00EECB7A /* MainInterface.storyboard */; };
+		BC13AEB11DC1BA6B00EECB7A /* Save To 3D Viewer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BC13AEA61DC1BA6B00EECB7A /* Save To 3D Viewer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC13AEB71DC1BC5500EECB7A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC13AEB61DC1BC5500EECB7A /* Media.xcassets */; };
+		BC13AEB91DC1C28C00EECB7A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC13AEB81DC1C28C00EECB7A /* MobileCoreServices.framework */; };
+		BC420E8B1D9B95740057F68A /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420E8A1D9B95740057F68A /* Model.m */; };
+		BC74BD881D98A6C100344C3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC74BD871D98A6C100344C3C /* main.m */; };
+		BC74BD8B1D98A6C100344C3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC74BD8A1D98A6C100344C3C /* AppDelegate.m */; };
+		BC74BD8E1D98A6C100344C3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC74BD8D1D98A6C100344C3C /* ViewController.m */; };
+		BC74BD911D98A6C100344C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74BD8F1D98A6C100344C3C /* Main.storyboard */; };
+		BC74BD931D98A6C100344C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC74BD921D98A6C100344C3C /* Assets.xcassets */; };
+		BC74BD961D98A6C100344C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74BD941D98A6C100344C3C /* LaunchScreen.storyboard */; };
+		BC74BDA11D98A6C100344C3C /* ThreeDViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC74BDA01D98A6C100344C3C /* ThreeDViewerTests.m */; };
+		BC74BDAC1D98A6C100344C3C /* ThreeDViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC74BDAB1D98A6C100344C3C /* ThreeDViewerUITests.m */; };
+		BC74BDBC1D98A6CF00344C3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74BDBB1D98A6CF00344C3C /* QuartzCore.framework */; };
+		BC74BDBE1D98A6D300344C3C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74BDBD1D98A6D300344C3C /* GLKit.framework */; };
+		BC74BDF81D98AE5B00344C3C /* ThreeDModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC74BDF71D98AE5B00344C3C /* ThreeDModelViewController.m */; };
+		D91B312E07742364E6BE2C59 /* libPods-ThreeDViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B07755CDCDD4784FBAE1FFD6 /* libPods-ThreeDViewer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC13AEAF1DC1BA6B00EECB7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC74BD7B1D98A6C100344C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC13AEA51DC1BA6B00EECB7A;
+			remoteInfo = "Save To 3D Viewer";
+		};
+		BC74BD9D1D98A6C100344C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC74BD7B1D98A6C100344C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC74BD821D98A6C100344C3C;
+			remoteInfo = ThreeDViewer;
+		};
+		BC74BDA81D98A6C100344C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC74BD7B1D98A6C100344C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC74BD821D98A6C100344C3C;
+			remoteInfo = ThreeDViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC13AE761DC18FAF00EECB7A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BC13AEB11DC1BA6B00EECB7A /* Save To 3D Viewer.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0ACABA803DB84F71AC51127B /* Pods-ThreeDViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeDViewer/Pods-ThreeDViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		0ADF6ED108B03E1A791EF032 /* libPods-ThreeDViewerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThreeDViewerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4647DBD574DC9F146D567F /* Pods-ThreeDViewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDViewerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeDViewerUITests/Pods-ThreeDViewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C3678FB693D6E1D8CFF8905 /* Pods-ThreeDViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDViewerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeDViewerTests/Pods-ThreeDViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C0DDEA8EC2E480DBF258548 /* libPods-ThreeDViewerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThreeDViewerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D041683E19DB59F1A9EAC79 /* Pods-ThreeDViewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDViewerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeDViewerUITests/Pods-ThreeDViewerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D1649061DAA889A0093793D /* ModelInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelInfoViewController.h; sourceTree = "<group>"; };
+		9D1649071DAA889A0093793D /* ModelInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelInfoViewController.m; sourceTree = "<group>"; };
+		9D1649081DAA889A0093793D /* ModelInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelInfoViewController.xib; sourceTree = "<group>"; };
+		9D16490B1DAB1F220093793D /* InMobiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InMobiSDK.framework; sourceTree = "<group>"; };
+		9D1649251DAB20E10093793D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9D3873221DA89300004917B3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9D3873231DA89300004917B3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9D3873261DA8C9DC004917B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D3873291DA8FF4B004917B3 /* OneDriveUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDriveUtil.m; sourceTree = "<group>"; };
+		9D38732B1DA90052004917B3 /* OneDriveUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDriveUtil.h; sourceTree = "<group>"; };
+		9D38732C1DA90A2F004917B3 /* SnapshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapshotViewController.h; sourceTree = "<group>"; };
+		9D38732D1DA90A2F004917B3 /* SnapshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotViewController.m; sourceTree = "<group>"; };
+		9D3873311DA913B5004917B3 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		9D3873321DA913B5004917B3 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		9D3873341DA92463004917B3 /* OneDriveCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDriveCollectionViewController.h; sourceTree = "<group>"; };
+		9D3873351DA92463004917B3 /* OneDriveCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDriveCollectionViewController.m; sourceTree = "<group>"; };
+		9D3873371DA92EC3004917B3 /* OneDriveCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneDriveCollectionViewCell.h; sourceTree = "<group>"; };
+		9D3873381DA92EC3004917B3 /* OneDriveCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneDriveCollectionViewCell.m; sourceTree = "<group>"; };
+		9D38733A1DAA8606004917B3 /* flashlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flashlight.mp3; sourceTree = "<group>"; };
+		9D38733C1DAA8679004917B3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9D38733E1DAA8743004917B3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9D778BB71DA13F5600A21FD0 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		9D778BB81DA13F5600A21FD0 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		9D778BBA1DA13F6500A21FD0 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		9D778BBB1DA13F6500A21FD0 /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		9D778BBD1DA147AB00A21FD0 /* vertex.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = vertex.sh; sourceTree = "<group>"; };
+		9D778BC21DA14EAE00A21FD0 /* fragment.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = fragment.sh; sourceTree = "<group>"; };
+		9DA43F2A1DAB9E300012F500 /* cow-nonormals.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cow-nonormals.obj"; sourceTree = "<group>"; };
+		9DA43F2B1DAB9E300012F500 /* pumpkin_tall_10k.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pumpkin_tall_10k.obj; sourceTree = "<group>"; };
+		9DA43F2C1DAB9E300012F500 /* teddy.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teddy.obj; sourceTree = "<group>"; };
+		9DBEC23F1DAB210A0021FA11 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9DBEC2411DAB3BDD0021FA11 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		9DBEC2421DAB3BDD0021FA11 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		9DBEC2431DAB3BDD0021FA11 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		9DBEC2461DAB40380021FA11 /* SettingLightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingLightCell.xib; sourceTree = "<group>"; };
+		9DBEC2481DAB419B0021FA11 /* SettingLightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingLightCell.h; sourceTree = "<group>"; };
+		9DBEC2491DAB419B0021FA11 /* SettingLightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingLightCell.m; sourceTree = "<group>"; };
+		9DBEC24B1DAB441F0021FA11 /* SettingColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingColorCell.h; sourceTree = "<group>"; };
+		9DBEC24C1DAB441F0021FA11 /* SettingColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingColorCell.m; sourceTree = "<group>"; };
+		9DBEC24D1DAB441F0021FA11 /* SettingColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingColorCell.xib; sourceTree = "<group>"; };
+		9DBEC2501DAB640F0021FA11 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
+		9DBEC2521DAB641D0021FA11 /* plane3.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane3.mtl; sourceTree = "<group>"; };
+		9DBEC2531DAB641D0021FA11 /* plane3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane3.obj; sourceTree = "<group>"; };
+		9DBEC2561DAB64260021FA11 /* cylinder2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cylinder2.mtl; sourceTree = "<group>"; };
+		9DBEC2571DAB64260021FA11 /* cylinder2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cylinder2.obj; sourceTree = "<group>"; };
+		9DBEC25A1DAB64D00021FA11 /* Avent.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Avent.mtl; sourceTree = "<group>"; };
+		9DBEC25B1DAB64D00021FA11 /* Avent.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Avent.obj; sourceTree = "<group>"; };
+		9DBEC25C1DAB64D00021FA11 /* interior_lod0.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = interior_lod0.tga; sourceTree = "<group>"; };
+		B07755CDCDD4784FBAE1FFD6 /* libPods-ThreeDViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThreeDViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC13AE4D1DC187B800EECB7A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BC13AE4F1DC187BF00EECB7A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BC13AE511DC187C400EECB7A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BC13AE531DC187C900EECB7A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BC13AE551DC187CF00EECB7A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BC13AE571DC187D600EECB7A /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		BC13AE581DC187D600EECB7A /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		BC13AE5B1DC187DB00EECB7A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BC13AE5D1DC187E500EECB7A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		BC13AE5F1DC187E900EECB7A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		BC13AE611DC188AA00EECB7A /* AmazonAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AmazonAd.framework; sourceTree = "<group>"; };
+		BC13AE901DC192E500EECB7A /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		BC13AE911DC192E500EECB7A /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		BC13AE941DC192E500EECB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BC13AE961DC192E500EECB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC13AE9D1DC196AF00EECB7A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		BC13AEA01DC1A77800EECB7A /* 3D Viewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "3D Viewer.entitlements"; sourceTree = "<group>"; };
+		BC13AEA11DC1A78700EECB7A /* Open In 3D Viewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Open In 3D Viewer.entitlements"; sourceTree = "<group>"; };
+		BC13AEA61DC1BA6B00EECB7A /* Save To 3D Viewer.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Save To 3D Viewer.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC13AEA81DC1BA6B00EECB7A /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		BC13AEA91DC1BA6B00EECB7A /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		BC13AEAC1DC1BA6B00EECB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BC13AEAE1DC1BA6B00EECB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC13AEB51DC1BB6E00EECB7A /* Save To 3D Viewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Save To 3D Viewer.entitlements"; sourceTree = "<group>"; };
+		BC13AEB61DC1BC5500EECB7A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		BC13AEB81DC1C28C00EECB7A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BC420E891D9B95740057F68A /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		BC420E8A1D9B95740057F68A /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		BC74BD831D98A6C100344C3C /* 3D Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3D Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC74BD871D98A6C100344C3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC74BD891D98A6C100344C3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC74BD8A1D98A6C100344C3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC74BD8C1D98A6C100344C3C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC74BD8D1D98A6C100344C3C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC74BD901D98A6C100344C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC74BD921D98A6C100344C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC74BD951D98A6C100344C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC74BD971D98A6C100344C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC74BD9C1D98A6C100344C3C /* ThreeDViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeDViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC74BDA01D98A6C100344C3C /* ThreeDViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeDViewerTests.m; sourceTree = "<group>"; };
+		BC74BDA21D98A6C100344C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC74BDA71D98A6C100344C3C /* ThreeDViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeDViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC74BDAB1D98A6C100344C3C /* ThreeDViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeDViewerUITests.m; sourceTree = "<group>"; };
+		BC74BDAD1D98A6C100344C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC74BDB91D98A6CA00344C3C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BC74BDBB1D98A6CF00344C3C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BC74BDBD1D98A6D300344C3C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BC74BDF61D98AE5B00344C3C /* ThreeDModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDModelViewController.h; sourceTree = "<group>"; };
+		BC74BDF71D98AE5B00344C3C /* ThreeDModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDModelViewController.m; sourceTree = "<group>"; };
+		E94CE69F3A1AEB6E0AD7949F /* Pods-ThreeDViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeDViewer/Pods-ThreeDViewer.release.xcconfig"; sourceTree = "<group>"; };
+		F22F3086E98F3BCD780D6509 /* Pods-ThreeDViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeDViewerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThreeDViewerTests/Pods-ThreeDViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC13AEA31DC1BA6B00EECB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC13AEB91DC1C28C00EECB7A /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BD801D98A6C100344C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC13AE601DC187E900EECB7A /* SafariServices.framework in Frameworks */,
+				BC13AE5E1DC187E500EECB7A /* JavaScriptCore.framework in Frameworks */,
+				BC13AE5C1DC187DB00EECB7A /* StoreKit.framework in Frameworks */,
+				BC13AE591DC187D600EECB7A /* EventKit.framework in Frameworks */,
+				BC13AE621DC188AA00EECB7A /* AmazonAd.framework in Frameworks */,
+				BC13AE5A1DC187D600EECB7A /* EventKitUI.framework in Frameworks */,
+				BC13AE561DC187CF00EECB7A /* MediaPlayer.framework in Frameworks */,
+				BC13AE541DC187C900EECB7A /* CoreTelephony.framework in Frameworks */,
+				BC13AE521DC187C400EECB7A /* SystemConfiguration.framework in Frameworks */,
+				BC13AE501DC187BF00EECB7A /* CoreLocation.framework in Frameworks */,
+				BC13AE4E1DC187B800EECB7A /* AdSupport.framework in Frameworks */,
+				9DBEC2401DAB210A0021FA11 /* libz.tbd in Frameworks */,
+				9D1649261DAB20E10093793D /* libsqlite3.tbd in Frameworks */,
+				9D38733F1DAA8743004917B3 /* AVFoundation.framework in Frameworks */,
+				9D3873271DA8C9DC004917B3 /* CoreGraphics.framework in Frameworks */,
+				BC74BDBE1D98A6D300344C3C /* GLKit.framework in Frameworks */,
+				BC74BDBC1D98A6CF00344C3C /* QuartzCore.framework in Frameworks */,
+				D91B312E07742364E6BE2C59 /* libPods-ThreeDViewer.a in Frameworks */,
+				9D16490C1DAB1F220093793D /* InMobiSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BD991D98A6C100344C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B732C044A04F9DF247A6023E /* libPods-ThreeDViewerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BDA41D98A6C100344C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775637C9FF6A9DD0BE3D4989 /* libPods-ThreeDViewerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		727C203767DD0509C814C272 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ACABA803DB84F71AC51127B /* Pods-ThreeDViewer.debug.xcconfig */,
+				E94CE69F3A1AEB6E0AD7949F /* Pods-ThreeDViewer.release.xcconfig */,
+				F22F3086E98F3BCD780D6509 /* Pods-ThreeDViewerTests.debug.xcconfig */,
+				3C3678FB693D6E1D8CFF8905 /* Pods-ThreeDViewerTests.release.xcconfig */,
+				1C4647DBD574DC9F146D567F /* Pods-ThreeDViewerUITests.debug.xcconfig */,
+				7D041683E19DB59F1A9EAC79 /* Pods-ThreeDViewerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D3873251DA8C9DC004917B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AEB81DC1C28C00EECB7A /* MobileCoreServices.framework */,
+				BC13AE611DC188AA00EECB7A /* AmazonAd.framework */,
+				BC13AE5F1DC187E900EECB7A /* SafariServices.framework */,
+				BC13AE5D1DC187E500EECB7A /* JavaScriptCore.framework */,
+				BC13AE5B1DC187DB00EECB7A /* StoreKit.framework */,
+				BC13AE571DC187D600EECB7A /* EventKit.framework */,
+				BC13AE581DC187D600EECB7A /* EventKitUI.framework */,
+				BC13AE551DC187CF00EECB7A /* MediaPlayer.framework */,
+				BC13AE531DC187C900EECB7A /* CoreTelephony.framework */,
+				BC13AE511DC187C400EECB7A /* SystemConfiguration.framework */,
+				BC13AE4F1DC187BF00EECB7A /* CoreLocation.framework */,
+				BC13AE4D1DC187B800EECB7A /* AdSupport.framework */,
+				9DBEC23F1DAB210A0021FA11 /* libz.tbd */,
+				9D1649251DAB20E10093793D /* libsqlite3.tbd */,
+				9D16490B1DAB1F220093793D /* InMobiSDK.framework */,
+				9D38733E1DAA8743004917B3 /* AVFoundation.framework */,
+				9D38733C1DAA8679004917B3 /* AudioToolbox.framework */,
+				9D3873261DA8C9DC004917B3 /* CoreGraphics.framework */,
+				B07755CDCDD4784FBAE1FFD6 /* libPods-ThreeDViewer.a */,
+				0ADF6ED108B03E1A791EF032 /* libPods-ThreeDViewerTests.a */,
+				4C0DDEA8EC2E480DBF258548 /* libPods-ThreeDViewerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D3873281DA8FF2F004917B3 /* OneDrive */ = {
+			isa = PBXGroup;
+			children = (
+				9D38732B1DA90052004917B3 /* OneDriveUtil.h */,
+				9D3873291DA8FF4B004917B3 /* OneDriveUtil.m */,
+				9D3873341DA92463004917B3 /* OneDriveCollectionViewController.h */,
+				9D3873351DA92463004917B3 /* OneDriveCollectionViewController.m */,
+				9D3873371DA92EC3004917B3 /* OneDriveCollectionViewCell.h */,
+				9D3873381DA92EC3004917B3 /* OneDriveCollectionViewCell.m */,
+			);
+			name = OneDrive;
+			sourceTree = "<group>";
+		};
+		9D778BB61DA13F4000A21FD0 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				9D778BB71DA13F5600A21FD0 /* GLViewController.h */,
+				9D778BB81DA13F5600A21FD0 /* GLViewController.m */,
+				9D778BBA1DA13F6500A21FD0 /* GLView.h */,
+				9D778BBB1DA13F6500A21FD0 /* GLView.m */,
+				9D778BBD1DA147AB00A21FD0 /* vertex.sh */,
+				9D778BC21DA14EAE00A21FD0 /* fragment.sh */,
+			);
+			name = example;
+			sourceTree = "<group>";
+		};
+		BC13AE8F1DC192E500EECB7A /* Open In 3D Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AEA11DC1A78700EECB7A /* Open In 3D Viewer.entitlements */,
+				BC13AE901DC192E500EECB7A /* ActionViewController.h */,
+				BC13AE911DC192E500EECB7A /* ActionViewController.m */,
+				BC13AE931DC192E500EECB7A /* MainInterface.storyboard */,
+				BC13AE961DC192E500EECB7A /* Info.plist */,
+				BC13AE9D1DC196AF00EECB7A /* Media.xcassets */,
+			);
+			path = "Open In 3D Viewer";
+			sourceTree = "<group>";
+		};
+		BC13AEA71DC1BA6B00EECB7A /* Save To 3D Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AEB51DC1BB6E00EECB7A /* Save To 3D Viewer.entitlements */,
+				BC13AEA81DC1BA6B00EECB7A /* ShareViewController.h */,
+				BC13AEA91DC1BA6B00EECB7A /* ShareViewController.m */,
+				BC13AEAB1DC1BA6B00EECB7A /* MainInterface.storyboard */,
+				BC13AEAE1DC1BA6B00EECB7A /* Info.plist */,
+				BC13AEB61DC1BC5500EECB7A /* Media.xcassets */,
+			);
+			path = "Save To 3D Viewer";
+			sourceTree = "<group>";
+		};
+		BC420E881D9B95640057F68A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC420E891D9B95740057F68A /* Model.h */,
+				BC420E8A1D9B95740057F68A /* Model.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BC74BD7A1D98A6C100344C3C = {
+			isa = PBXGroup;
+			children = (
+				BC74BD851D98A6C100344C3C /* ThreeDViewer */,
+				BC74BD9F1D98A6C100344C3C /* ThreeDViewerTests */,
+				BC74BDAA1D98A6C100344C3C /* ThreeDViewerUITests */,
+				BC13AE8F1DC192E500EECB7A /* Open In 3D Viewer */,
+				BC13AEA71DC1BA6B00EECB7A /* Save To 3D Viewer */,
+				BC74BD841D98A6C100344C3C /* Products */,
+				BC74BDBF1D98A7F300344C3C /* Resources */,
+				9D3873251DA8C9DC004917B3 /* Frameworks */,
+				727C203767DD0509C814C272 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BC74BD841D98A6C100344C3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC74BD831D98A6C100344C3C /* 3D Viewer.app */,
+				BC74BD9C1D98A6C100344C3C /* ThreeDViewerTests.xctest */,
+				BC74BDA71D98A6C100344C3C /* ThreeDViewerUITests.xctest */,
+				BC13AEA61DC1BA6B00EECB7A /* Save To 3D Viewer.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC74BD851D98A6C100344C3C /* ThreeDViewer */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AEA01DC1A77800EECB7A /* 3D Viewer.entitlements */,
+				9D3873281DA8FF2F004917B3 /* OneDrive */,
+				9D778BB61DA13F4000A21FD0 /* example */,
+				BC420E881D9B95640057F68A /* Model */,
+				BC74BD891D98A6C100344C3C /* AppDelegate.h */,
+				BC74BD8A1D98A6C100344C3C /* AppDelegate.m */,
+				BC74BD8C1D98A6C100344C3C /* ViewController.h */,
+				BC74BD8D1D98A6C100344C3C /* ViewController.m */,
+				9D3873221DA89300004917B3 /* MBProgressHUD.h */,
+				9D3873231DA89300004917B3 /* MBProgressHUD.m */,
+				BC74BDF61D98AE5B00344C3C /* ThreeDModelViewController.h */,
+				BC74BDF71D98AE5B00344C3C /* ThreeDModelViewController.m */,
+				BC74BD8F1D98A6C100344C3C /* Main.storyboard */,
+				9D1649061DAA889A0093793D /* ModelInfoViewController.h */,
+				9D1649071DAA889A0093793D /* ModelInfoViewController.m */,
+				9D1649081DAA889A0093793D /* ModelInfoViewController.xib */,
+				9DBEC2411DAB3BDD0021FA11 /* SettingViewController.h */,
+				9DBEC2421DAB3BDD0021FA11 /* SettingViewController.m */,
+				9DBEC2431DAB3BDD0021FA11 /* SettingViewController.xib */,
+				9DBEC2461DAB40380021FA11 /* SettingLightCell.xib */,
+				9DBEC24B1DAB441F0021FA11 /* SettingColorCell.h */,
+				9DBEC24C1DAB441F0021FA11 /* SettingColorCell.m */,
+				9DBEC24D1DAB441F0021FA11 /* SettingColorCell.xib */,
+				9DBEC2481DAB419B0021FA11 /* SettingLightCell.h */,
+				9DBEC2491DAB419B0021FA11 /* SettingLightCell.m */,
+				9D38732C1DA90A2F004917B3 /* SnapshotViewController.h */,
+				9D38732D1DA90A2F004917B3 /* SnapshotViewController.m */,
+				9D3873311DA913B5004917B3 /* ImageUtils.h */,
+				9D3873321DA913B5004917B3 /* ImageUtils.m */,
+				BC74BD921D98A6C100344C3C /* Assets.xcassets */,
+				9D38733A1DAA8606004917B3 /* flashlight.mp3 */,
+				BC74BD941D98A6C100344C3C /* LaunchScreen.storyboard */,
+				BC74BD971D98A6C100344C3C /* Info.plist */,
+				BC74BD861D98A6C100344C3C /* Supporting Files */,
+			);
+			path = ThreeDViewer;
+			sourceTree = "<group>";
+		};
+		BC74BD861D98A6C100344C3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC74BDBD1D98A6D300344C3C /* GLKit.framework */,
+				BC74BDBB1D98A6CF00344C3C /* QuartzCore.framework */,
+				BC74BDB91D98A6CA00344C3C /* OpenGLES.framework */,
+				BC74BD871D98A6C100344C3C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC74BD9F1D98A6C100344C3C /* ThreeDViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC74BDA01D98A6C100344C3C /* ThreeDViewerTests.m */,
+				BC74BDA21D98A6C100344C3C /* Info.plist */,
+			);
+			path = ThreeDViewerTests;
+			sourceTree = "<group>";
+		};
+		BC74BDAA1D98A6C100344C3C /* ThreeDViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC74BDAB1D98A6C100344C3C /* ThreeDViewerUITests.m */,
+				BC74BDAD1D98A6C100344C3C /* Info.plist */,
+			);
+			path = ThreeDViewerUITests;
+			sourceTree = "<group>";
+		};
+		BC74BDBF1D98A7F300344C3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA43F2A1DAB9E300012F500 /* cow-nonormals.obj */,
+				9DA43F2B1DAB9E300012F500 /* pumpkin_tall_10k.obj */,
+				9DA43F2C1DAB9E300012F500 /* teddy.obj */,
+				9DBEC25A1DAB64D00021FA11 /* Avent.mtl */,
+				9DBEC25B1DAB64D00021FA11 /* Avent.obj */,
+				9DBEC25C1DAB64D00021FA11 /* interior_lod0.tga */,
+				9DBEC2561DAB64260021FA11 /* cylinder2.mtl */,
+				9DBEC2571DAB64260021FA11 /* cylinder2.obj */,
+				9DBEC2521DAB641D0021FA11 /* plane3.mtl */,
+				9DBEC2531DAB641D0021FA11 /* plane3.obj */,
+				9DBEC2501DAB640F0021FA11 /* teapot.obj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC13AEA51DC1BA6B00EECB7A /* Save To 3D Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC13AEB21DC1BA6B00EECB7A /* Build configuration list for PBXNativeTarget "Save To 3D Viewer" */;
+			buildPhases = (
+				BC13AEA21DC1BA6B00EECB7A /* Sources */,
+				BC13AEA31DC1BA6B00EECB7A /* Frameworks */,
+				BC13AEA41DC1BA6B00EECB7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Save To 3D Viewer";
+			productName = "Save To 3D Viewer";
+			productReference = BC13AEA61DC1BA6B00EECB7A /* Save To 3D Viewer.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BC74BD821D98A6C100344C3C /* ThreeDViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC74BDB01D98A6C100344C3C /* Build configuration list for PBXNativeTarget "ThreeDViewer" */;
+			buildPhases = (
+				267095F67097208CB719211B /* [CP] Check Pods Manifest.lock */,
+				BC74BD7F1D98A6C100344C3C /* Sources */,
+				BC74BD801D98A6C100344C3C /* Frameworks */,
+				BC74BD811D98A6C100344C3C /* Resources */,
+				11D777AC247561CCA35677D5 /* [CP] Embed Pods Frameworks */,
+				13941DD92C2469515B91420B /* [CP] Copy Pods Resources */,
+				BC13AE761DC18FAF00EECB7A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC13AEB01DC1BA6B00EECB7A /* PBXTargetDependency */,
+			);
+			name = ThreeDViewer;
+			productName = ThreeDViewer;
+			productReference = BC74BD831D98A6C100344C3C /* 3D Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC74BD9B1D98A6C100344C3C /* ThreeDViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC74BDB31D98A6C100344C3C /* Build configuration list for PBXNativeTarget "ThreeDViewerTests" */;
+			buildPhases = (
+				12BCE246BBA21F3329DD8E19 /* [CP] Check Pods Manifest.lock */,
+				BC74BD981D98A6C100344C3C /* Sources */,
+				BC74BD991D98A6C100344C3C /* Frameworks */,
+				BC74BD9A1D98A6C100344C3C /* Resources */,
+				DA4ED263690353704F9F0D43 /* [CP] Embed Pods Frameworks */,
+				F19686EE0CA4025D8FCAF758 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC74BD9E1D98A6C100344C3C /* PBXTargetDependency */,
+			);
+			name = ThreeDViewerTests;
+			productName = ThreeDViewerTests;
+			productReference = BC74BD9C1D98A6C100344C3C /* ThreeDViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC74BDA61D98A6C100344C3C /* ThreeDViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC74BDB61D98A6C100344C3C /* Build configuration list for PBXNativeTarget "ThreeDViewerUITests" */;
+			buildPhases = (
+				F10118E79C0347F6DA662BB0 /* [CP] Check Pods Manifest.lock */,
+				BC74BDA31D98A6C100344C3C /* Sources */,
+				BC74BDA41D98A6C100344C3C /* Frameworks */,
+				BC74BDA51D98A6C100344C3C /* Resources */,
+				EE3E975B415E92101CC815F6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC74BDA91D98A6C100344C3C /* PBXTargetDependency */,
+			);
+			name = ThreeDViewerUITests;
+			productName = ThreeDViewerUITests;
+			productReference = BC74BDA71D98A6C100344C3C /* ThreeDViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC74BD7B1D98A6C100344C3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "xiangwei wang";
+				TargetAttributes = {
+					BC13AEA51DC1BA6B00EECB7A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S78RUL88S5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					BC74BD821D98A6C100344C3C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = S78RUL88S5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					BC74BD9B1D98A6C100344C3C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BC74BD821D98A6C100344C3C;
+					};
+					BC74BDA61D98A6C100344C3C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BC74BD821D98A6C100344C3C;
+					};
+				};
+			};
+			buildConfigurationList = BC74BD7E1D98A6C100344C3C /* Build configuration list for PBXProject "ThreeDViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC74BD7A1D98A6C100344C3C;
+			productRefGroup = BC74BD841D98A6C100344C3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC74BD821D98A6C100344C3C /* ThreeDViewer */,
+				BC74BD9B1D98A6C100344C3C /* ThreeDViewerTests */,
+				BC74BDA61D98A6C100344C3C /* ThreeDViewerUITests */,
+				BC13AEA51DC1BA6B00EECB7A /* Save To 3D Viewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC13AEA41DC1BA6B00EECB7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC13AEB71DC1BC5500EECB7A /* Media.xcassets in Resources */,
+				BC13AEAD1DC1BA6B00EECB7A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BD811D98A6C100344C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBEC2541DAB641D0021FA11 /* plane3.mtl in Resources */,
+				9DBEC24F1DAB441F0021FA11 /* SettingColorCell.xib in Resources */,
+				9DBEC25D1DAB64D00021FA11 /* Avent.mtl in Resources */,
+				9DBEC25F1DAB64D00021FA11 /* interior_lod0.tga in Resources */,
+				9DBEC2551DAB641D0021FA11 /* plane3.obj in Resources */,
+				9DBEC2511DAB640F0021FA11 /* teapot.obj in Resources */,
+				9D778BBE1DA147AB00A21FD0 /* vertex.sh in Resources */,
+				9D38733B1DAA8606004917B3 /* flashlight.mp3 in Resources */,
+				9DA43F2E1DAB9E300012F500 /* pumpkin_tall_10k.obj in Resources */,
+				9DBEC2581DAB64260021FA11 /* cylinder2.mtl in Resources */,
+				BC74BD961D98A6C100344C3C /* LaunchScreen.storyboard in Resources */,
+				BC74BD931D98A6C100344C3C /* Assets.xcassets in Resources */,
+				9DBEC25E1DAB64D00021FA11 /* Avent.obj in Resources */,
+				9DBEC2591DAB64260021FA11 /* cylinder2.obj in Resources */,
+				9D16490A1DAA889A0093793D /* ModelInfoViewController.xib in Resources */,
+				9D778BC31DA14EAE00A21FD0 /* fragment.sh in Resources */,
+				9DA43F2D1DAB9E300012F500 /* cow-nonormals.obj in Resources */,
+				9DA43F2F1DAB9E300012F500 /* teddy.obj in Resources */,
+				BC74BD911D98A6C100344C3C /* Main.storyboard in Resources */,
+				9DBEC2451DAB3BDD0021FA11 /* SettingViewController.xib in Resources */,
+				9DBEC2471DAB40380021FA11 /* SettingLightCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BD9A1D98A6C100344C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BDA51D98A6C100344C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11D777AC247561CCA35677D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeDViewer/Pods-ThreeDViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12BCE246BBA21F3329DD8E19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		13941DD92C2469515B91420B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeDViewer/Pods-ThreeDViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		267095F67097208CB719211B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA4ED263690353704F9F0D43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeDViewerTests/Pods-ThreeDViewerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3E975B415E92101CC815F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeDViewerUITests/Pods-ThreeDViewerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F10118E79C0347F6DA662BB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F19686EE0CA4025D8FCAF758 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThreeDViewerTests/Pods-ThreeDViewerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC13AEA21DC1BA6B00EECB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC13AEAA1DC1BA6B00EECB7A /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BD7F1D98A6C100344C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D38732E1DA90A2F004917B3 /* SnapshotViewController.m in Sources */,
+				BC74BD8E1D98A6C100344C3C /* ViewController.m in Sources */,
+				9D778BB91DA13F5600A21FD0 /* GLViewController.m in Sources */,
+				9DBEC24A1DAB419B0021FA11 /* SettingLightCell.m in Sources */,
+				9D3873391DA92EC3004917B3 /* OneDriveCollectionViewCell.m in Sources */,
+				BC74BD8B1D98A6C100344C3C /* AppDelegate.m in Sources */,
+				9D778BBC1DA13F6500A21FD0 /* GLView.m in Sources */,
+				9D3873331DA913B5004917B3 /* ImageUtils.m in Sources */,
+				BC74BDF81D98AE5B00344C3C /* ThreeDModelViewController.m in Sources */,
+				BC74BD881D98A6C100344C3C /* main.m in Sources */,
+				9D3873361DA92463004917B3 /* OneDriveCollectionViewController.m in Sources */,
+				BC420E8B1D9B95740057F68A /* Model.m in Sources */,
+				9D3873241DA89300004917B3 /* MBProgressHUD.m in Sources */,
+				9D1649091DAA889A0093793D /* ModelInfoViewController.m in Sources */,
+				9D38732A1DA8FF4B004917B3 /* OneDriveUtil.m in Sources */,
+				9DBEC24E1DAB441F0021FA11 /* SettingColorCell.m in Sources */,
+				9DBEC2441DAB3BDD0021FA11 /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BD981D98A6C100344C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC74BDA11D98A6C100344C3C /* ThreeDViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC74BDA31D98A6C100344C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC74BDAC1D98A6C100344C3C /* ThreeDViewerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC13AEB01DC1BA6B00EECB7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC13AEA51DC1BA6B00EECB7A /* Save To 3D Viewer */;
+			targetProxy = BC13AEAF1DC1BA6B00EECB7A /* PBXContainerItemProxy */;
+		};
+		BC74BD9E1D98A6C100344C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC74BD821D98A6C100344C3C /* ThreeDViewer */;
+			targetProxy = BC74BD9D1D98A6C100344C3C /* PBXContainerItemProxy */;
+		};
+		BC74BDA91D98A6C100344C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC74BD821D98A6C100344C3C /* ThreeDViewer */;
+			targetProxy = BC74BDA81D98A6C100344C3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC13AE931DC192E500EECB7A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC13AE941DC192E500EECB7A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		BC13AEAB1DC1BA6B00EECB7A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC13AEAC1DC1BA6B00EECB7A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		BC74BD8F1D98A6C100344C3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC74BD901D98A6C100344C3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC74BD941D98A6C100344C3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC74BD951D98A6C100344C3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC13AEB31DC1BA6B00EECB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Save To 3D Viewer/Save To 3D Viewer.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = "Save To 3D Viewer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiang.3dv.Save-To-3D-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BC13AEB41DC1BA6B00EECB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Save To 3D Viewer/Save To 3D Viewer.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = "Save To 3D Viewer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiang.3dv.Save-To-3D-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BC74BDAE1D98A6C100344C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC74BDAF1D98A6C100344C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC74BDB11D98A6C100344C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ACABA803DB84F71AC51127B /* Pods-ThreeDViewer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ThreeDViewer/3D Viewer.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ThreeDViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.3dv;
+				PRODUCT_NAME = "3D Viewer";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		BC74BDB21D98A6C100344C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94CE69F3A1AEB6E0AD7949F /* Pods-ThreeDViewer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ThreeDViewer/3D Viewer.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ThreeDViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.3dv;
+				PRODUCT_NAME = "3D Viewer";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		BC74BDB41D98A6C100344C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F22F3086E98F3BCD780D6509 /* Pods-ThreeDViewerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThreeDViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.ThreeDViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeDViewer.app/ThreeDViewer";
+			};
+			name = Debug;
+		};
+		BC74BDB51D98A6C100344C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C3678FB693D6E1D8CFF8905 /* Pods-ThreeDViewerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThreeDViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.ThreeDViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeDViewer.app/ThreeDViewer";
+			};
+			name = Release;
+		};
+		BC74BDB71D98A6C100344C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4647DBD574DC9F146D567F /* Pods-ThreeDViewerUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ThreeDViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.ThreeDViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ThreeDViewer;
+			};
+			name = Debug;
+		};
+		BC74BDB81D98A6C100344C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D041683E19DB59F1A9EAC79 /* Pods-ThreeDViewerUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ThreeDViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.ThreeDViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ThreeDViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC13AEB21DC1BA6B00EECB7A /* Build configuration list for PBXNativeTarget "Save To 3D Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC13AEB31DC1BA6B00EECB7A /* Debug */,
+				BC13AEB41DC1BA6B00EECB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC74BD7E1D98A6C100344C3C /* Build configuration list for PBXProject "ThreeDViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC74BDAE1D98A6C100344C3C /* Debug */,
+				BC74BDAF1D98A6C100344C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC74BDB01D98A6C100344C3C /* Build configuration list for PBXNativeTarget "ThreeDViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC74BDB11D98A6C100344C3C /* Debug */,
+				BC74BDB21D98A6C100344C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC74BDB31D98A6C100344C3C /* Build configuration list for PBXNativeTarget "ThreeDViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC74BDB41D98A6C100344C3C /* Debug */,
+				BC74BDB51D98A6C100344C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC74BDB61D98A6C100344C3C /* Build configuration list for PBXNativeTarget "ThreeDViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC74BDB71D98A6C100344C3C /* Debug */,
+				BC74BDB81D98A6C100344C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC74BD7B1D98A6C100344C3C /* Project object */;
+}

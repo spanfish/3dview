@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController">
+            <connections>
+                <outlet property="backgroundView" destination="nze-FB-vE0" id="LLi-Rr-mco"/>
+                <outlet property="tableView" destination="meP-CL-ZsX" id="MVI-iw-RAV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nze-FB-vE0" userLabel="Background">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huA-8Y-ggo" userLabel="Container">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-ic-0Nz">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9Q-KF-gMa">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Jc1-ub-4wS"/>
+                                <constraint firstAttribute="height" constant="40" id="mNI-Zp-f2L"/>
+                            </constraints>
+                            <state key="normal" image="cancel"/>
+                            <connections>
+                                <action selector="cancelTouched:" destination="-1" eventType="touchUpInside" id="tvH-g1-E6n"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="meP-CL-ZsX">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Vrm-s1-SyY"/>
+                                <outlet property="delegate" destination="-1" id="KHc-Jh-CNc"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="a9Q-KF-gMa" firstAttribute="top" secondItem="huA-8Y-ggo" secondAttribute="top" id="0ng-1G-OMf"/>
+                        <constraint firstItem="meP-CL-ZsX" firstAttribute="width" secondItem="huA-8Y-ggo" secondAttribute="width" id="36N-XZ-pB5"/>
+                        <constraint firstItem="meP-CL-ZsX" firstAttribute="top" secondItem="a9Q-KF-gMa" secondAttribute="bottom" id="HIt-JO-txO"/>
+                        <constraint firstAttribute="trailing" secondItem="a9Q-KF-gMa" secondAttribute="trailing" id="UDV-Hb-0tu"/>
+                        <constraint firstItem="a9Q-KF-gMa" firstAttribute="leading" secondItem="vmb-ic-0Nz" secondAttribute="trailing" id="bcT-zv-iyj"/>
+                        <constraint firstItem="vmb-ic-0Nz" firstAttribute="height" secondItem="a9Q-KF-gMa" secondAttribute="height" id="iGd-m3-MOT"/>
+                        <constraint firstItem="vmb-ic-0Nz" firstAttribute="leading" secondItem="huA-8Y-ggo" secondAttribute="leading" constant="5" id="ugP-YO-IYx"/>
+                        <constraint firstItem="vmb-ic-0Nz" firstAttribute="top" secondItem="huA-8Y-ggo" secondAttribute="top" id="weQ-jp-lmO"/>
+                        <constraint firstAttribute="bottom" secondItem="meP-CL-ZsX" secondAttribute="bottom" id="xJE-FC-xAT"/>
+                        <constraint firstItem="meP-CL-ZsX" firstAttribute="centerX" secondItem="huA-8Y-ggo" secondAttribute="centerX" id="xo6-TL-gub"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nze-FB-vE0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5yu-Ew-I2B"/>
+                <constraint firstItem="huA-8Y-ggo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7hP-Ey-vvn"/>
+                <constraint firstItem="nze-FB-vE0" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.7" id="Qbm-zZ-gfw"/>
+                <constraint firstItem="huA-8Y-ggo" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.7" id="UZu-U1-c6k"/>
+                <constraint firstItem="huA-8Y-ggo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="UaO-bx-obJ"/>
+                <constraint firstItem="nze-FB-vE0" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="chE-mc-Y4H"/>
+                <constraint firstItem="nze-FB-vE0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gsu-xV-Hsu"/>
+                <constraint firstItem="huA-8Y-ggo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sur-8k-kNE"/>
+            </constraints>
+            <point key="canvasLocation" x="65.5" y="106.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="40" height="40"/>
+    </resources>
+</document>

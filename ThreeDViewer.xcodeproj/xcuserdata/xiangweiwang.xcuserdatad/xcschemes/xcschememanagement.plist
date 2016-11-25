@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>3D Viewer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Open In 3D Viewer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Save To 3D Viewer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>ThreeDViewer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BC13AE661DC18FAF00EECB7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC13AE7A1DC1916200EECB7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC13AE8D1DC192E400EECB7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC13AEA51DC1BA6B00EECB7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC74BD821D98A6C100344C3C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC74BD9B1D98A6C100344C3C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC74BDA61D98A6C100344C3C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
